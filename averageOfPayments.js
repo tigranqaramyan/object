@@ -10,6 +10,5 @@ const payments = [
 ];
 
 const sum = payments.reduce((sum,payment) => sum + payment.payedAmount,0)
-const count = payments.filter(payment => payment.payedAmount).length
-let average = sum / count
+let average = sum / payments.length
 console.log (average)
